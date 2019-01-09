@@ -1,4 +1,4 @@
-class AddGradeAndBirthdateToStudents < ActiveRecord::Migration[5.1]
+class ChangeColumn < ActiveRecord::Migration[5.1]
   
   def change
     
