@@ -5,14 +5,11 @@ class CreateStudents < ActiveRecord::Migration[5.1]
   :database => "db/students.sqlite"
 )
 
-sql = <<-SQL
-  CREATE TABLE IF NOT EXISTS students (
-  id INTEGER PRIMARY KEY,
-  name string
-   )
-SQL
+ create_table :students do |t|
+      t.string :name
+        end
  
-ActiveRecord::Base.connection.execute(sql)
+
 end
 
 
